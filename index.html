@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내배캠 최고 평점 영화</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="main-title">
+            <h1>The Best Grade Movie Collection</h1>
+        </div>
+        <div class="search-movie">
+            <h2>영화 검색 :
+                <input placeholder="영화 제목을 검색해 보세요.  " type="text" class="search-box">
+                <button class="search-button" onclick="searchContent()">검색</button>
+            </h2>
+        </div>
+    </header>
+
+    <footer>     <!-- 보기 쉽게 페이지 번호 위로 올림 -->
+        <div class="page-view">
+            <button onclick = "viewPage(1)">1</button>
+            <button onclick = "viewPage(2)">2</button>
+            <button onclick = "viewPage(3)">3</button>
+            <button onclick = "viewPage(4)">4</button>
+            <button onclick = "viewPage(5)">5</button>
+            <button onclick = "viewPage(6)">6</button>
+            <button onclick = "viewPage(7)">7</button>
+            <button onclick = "viewPage(8)">8</button>
+            <button onclick = "viewPage(9)">9</button>
+            <button onclick = "viewPage(10)">10</button>
+        </div>
+    </footer>
+
+    <div class="content-line"> 
+        <!-- 
+            JS로 구현 
+            const temp_html = `
+            <div class="content-box">
+                <div class="movie-content" onclick = alert(${id})>
+                    <img id="moive-img" class="img" src="${base_url + image}">
+                    <h3 id="movie-title">${title}</h3>
+                    <p id = "movie-exp" class="movie-exp">${overview}</p>
+                </div>        
+            </div>`
+        -->
+    </div>    
+
+    
+
+    <script src="jscode.js"></script>
+</body>
+
+</html>
